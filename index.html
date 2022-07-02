@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Special One</title>
+  <link rel="preload" href="fonts/IgraSans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GilroyLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GilroyBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo"><img loading="lazy" src="./img/logo.png" class="image" width="196" height="40" alt="Логотип Special One"></a>
+    <nav class="nav" title="Главное меню" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link" data-menu-item data-scroll>Главная</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О нас</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link" data-menu-item data-scroll>Услуги и цены</a></li>
+        <li class="nav__item"><a href="#clinic" class="nav__link" data-menu-item data-scroll>О клинике</a></li>
+        <li class="nav__item"><a href="#cta" class="nav__link" data-menu-item data-scroll>Команда</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link" data-menu-item data-scroll>Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+    </button>
+    <div class="header__contacts">
+      <a href="tel:+79213212020" class="phone header__phone">+7 921 321-20-20</a>
+      <a href="mailto:hello@special-one.ru" class="header__email">hello@special-one.ru</a>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">ЦИФРОВАЯ</br>СТОМАТОЛОГИЯ</br><span>НОВОГО ПОКОЛЕНИЯ</span></h1>
+      <div class="hero__subtitle">ПРЕДСКАЗУЕМО БЕЗУПРЕЧНЫЙ РЕЗУЛЬТАТ</div>
+      <button class="btn-reset btn hero__btn">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+    </div>
+  </div>
+</section>
+
+      <section class="about" id="about">
+  <div class="container about__container">
+    <div class="about__img"><img loading="lazy" src="./img/about/about-img.png" class="image" width="620" height="533" alt="Аппаратура нашей клиники"></div>
+    <div class="about__content">
+      <h2 class="title about__title">Special оne — НОВОЕ СЛОВО В ЛЕЧЕНИИ ЗУБОВ</h2>
+      <ul class="list-reset about__list">
+        <li class="about__item">
+          <div class="about__item-number">01.</div>
+          <div class="descr about__item-descr">В HOUSTON вы решите любую проблему полости рта с детальной точностью и под микроскопом.</div>
+        </li>
+        <li class="about__item">
+          <div class="about__item-number">02.</div>
+          <div class="descr about__item-descr">Для нас важна безопасность и высокотехнологичность лечения, а также абсолютный комфорт каждого пациента.</div>
+        </li>
+        <li class="about__item">
+          <div class="about__item-number">03.</div>
+          <div class="descr about__item-descr">Вы узнаете, что современная стоматология может быть не только качественной, но и безболезненной.</div>
+        </li>
+        <li class="about__item">
+          <div class="about__item-number">04.</div>
+          <div class="descr about__item-descr">Эстетика, безупречность и надежность — наша идеология. А результат нашей работы — ваши совершенные улыбки.</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="services" id="services">
+  <div class="container">
+    <div class="heading services__heading">
+      <h2 class="title services__title">Special оne РЕШАЕТ ПРОБЛЕМЫ</h2>
+      <div class="descr services__descr">ЛЕЧЕНИЕ КАРИЕСА ИЛИ СЛОЖНЫЕ ЧЕЛЮСТНО-ЛИЦЕВЫЕ ОПЕРАЦИИ? <span>МЫ СДЕЛАЕМ ВСЕ.</span></div>
+    </div>
+    <ul class="list-reset services__cards">
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/lechenie.png" class="image" width="160" height="160" alt="Фотография лечения"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ЛЕЧЕНИЕ</h3>
+          <div class="services__item-descr">Сохранение и эстетичное восстановление родных зубов. Все лечение производится с использованием стоматологического микроскопа Leica.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/lechenie-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/ortodontia.png" class="image" width="160" height="160" alt="Фотография ортодонтии"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ОРТОДОНТИЯ</h3>
+          <div class="services__item-descr">Использование эстетических и лингвальных брекет-систем, элайнеров.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/ortodontia-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/implantacia.png" class="image" width="160" height="160" alt="Фотография имплантации"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ИМПЛАНТАЦИЯ</h3>
+          <div class="services__item-descr">Самое современное восстановление утраченного зуба.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/implantacia-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/gigiena.png" class="image" width="160" height="160" alt="Фотография гигиены"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ГИГИЕHA И ОТБЕЛИВАНИЕ</h3>
+          <div class="services__item-descr">Профессиональная гигиена, которая позволит иметь здоровые зубы и красивую улыбку.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/gigiena-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/protezirovanie.png" class="image" width="160" height="160" alt="Фотография протезирования"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ПРОТЕЗИРОВАНИЕ</h3>
+          <div class="services__item-descr">Детальная диагностика и проектирование результата. Полное соответствие природным цвету и форме.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/protezirovanie-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+      <li class="services__item">
+        <div class="services__item-img"><img loading="lazy" src="./img/services/hirurgia.png" class="image" width="160" height="160" alt="Фотография лечения"></div>
+        <div class="services__item-content">
+          <h3 class="services__item-title">ХИРУРГИЯ И ПАРОДОНТОЛОГИЯ</h3>
+          <div class="services__item-descr">Лечение всех заболеваний, в том числе посредством хирургии.</div>
+          <a href="#" class="services__item-link">Посмотреть цены</a>
+        </div>
+        <div class="services__item-letter"><img loading="lazy" src="./img/services/hirurgia-letter.svg" class="image" width="166" height="250" alt=""></div>
+      </li>
+    </ul>
+    <div class="services__button">
+      <button class="btn-reset btn services__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
+    </div>
+  </div>
+</section>
+
+      <section class="clinic" id="clinic">
+  <div class="container">
+    <div class="heading clinic__heading">
+      <h2 class="title clinic__title">РЕЗУЛЬТАТ, КОТОРЫЙ ВАС <span>УДИВИТ</span></h2>
+      <div class="descr clinic__descr">Мы ответственны за здоровье каждого пациента и подходим к решению вопросов со всех сторон:</div>
+    </div>
+    <ul class="list-reset clinic__list">
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-1.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Подробная консультация с выбранным специалистом</div>
+      </li>
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-2.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Детальная диагностика перед лечением</div>
+      </li>
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-3.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Презентация текущей ситуации</div>
+      </li>
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-4.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Формирование плана лечения, с указанием сроков и стоимости</div>
+      </li>
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-5.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Демонстрация прогресса</div>
+      </li>
+      <li class="clinic__item">
+        <div class="clinic__item-img"><img loading="lazy" src="./img/clinic/clinic-6.svg" class="image" width="68" height="68" alt=""></div>
+        <div class="clinic__item-descr">Представление результата в будущем</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="team" id="team">
+  <div class="container">
+    <div class="heading team__heading">
+      <h2 class="title team__title">Врачи Special оne</h2>
+      <div class="descr team__descr">ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА</div>
+    </div>
+    <div class="team__slider">
+      <div class="swiper team__content">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/mochalov.avif" type="image/avif">
+                <source srcset="./img/team/mochalov.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/mochalov.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Мочалова Дмитрия Олеговича">
+              </picture>
+              <h3 class="team__name">Мочалов Дмитрий Олегович</h3>
+              <div class="team__special">Врач-стоматолог терапевт и ортопед</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/karionova.avif" type="image/avif">
+                <source srcset="./img/team/karionova.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/karionova.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Карионова Александра Сергеевны">
+              </picture>
+              <h3 class="team__name">Карионова Александра СергеевHA</h3>
+              <div class="team__special">Врач-стоматолог ортопед</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/izrailov.avif" type="image/avif">
+                <source srcset="./img/team/izrailov.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/izrailov.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Израилова Артура Муношевича">
+              </picture>
+              <h3 class="team__name">Иванов Артур Муношевич</h3>
+              <div class="team__special">Врач-стоматолог общей практики</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/mochalov.avif" type="image/avif">
+                <source srcset="./img/team/mochalov.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/mochalov.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Мочалова Дмитрия Олеговича">
+              </picture>
+              <h3 class="team__name">Мочалов Дмитрий Олегович</h3>
+              <div class="team__special">Врач-стоматолог терапевт и ортопед</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/karionova.avif" type="image/avif">
+                <source srcset="./img/team/karionova.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/karionova.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Карионова Александра Сергеевны">
+              </picture>
+              <h3 class="team__name">Карионова Александра СергеевHA</h3>
+              <div class="team__special">Врач-стоматолог ортопед</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__item">
+              <picture>
+                <source srcset="./img/team/izrailov.avif" type="image/avif">
+                <source srcset="./img/team/izrailov.webp" type="image/webp">
+                <img loading="lazy" src="./img/team/izrailov.jpg" class="team__image" width="362" height="540"
+                  alt="Фотография Израилова Артура Муношевича">
+              </picture>
+              <h3 class="team__name">Иванов Артур Муношевич</h3>
+              <div class="team__special">Врач-стоматолог общей практики</div>
+            </div>
+          </div>
+        </div>
+        <div class="team__nav">
+              <button class="btn-reset team__slider-btn team__slider-btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+              <div class="swiper-pagination team__pagination"></div>
+              <button class="btn-reset team__slider-btn team__slider-btn--next" aria-label="Перейти к следующему слайду"></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <section class="cta" id="cta">
+  <div class="container">
+    <div class="heading cta__heading">
+      <h2 class="title cta__title">ХОТИТЕ УЗhаТЬ О hаС ЕЩЕ БОЛЬШЕ?</h2>
+      <div class="descr cta__descr"><span>ОСТАВЬТЕ ЗАЯВКУ</span> НА ЗВОНОК И АДМИНИСТРАТОР С ВАМИ СВЯЖЕТСЯ <span>В ТЕЧЕНИЕ 1 ЧАСА</span></div>
+    </div>
+    <form action="#" class="form">
+      <label class="form__label form__label--name">
+        <input type="text" name="Имя" class="input-reset form__input" placeholder="Введите имя">
+      </label>
+      <label class="form__label form__label--phone">
+        <input type="tel" name="Телефон" class="input-reset form__input" placeholder="Введите телефон">
+      </label>
+      <div class="form__button">
+        <button class="btn-reset btn form__btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+      <section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <ul class="list-reset contacts__card">
+      <li class="contacts__item">
+        <div class="contacts__item-descr">Мы всегда на связи и встречаем вас с улыбкой не потому, что этого требует корпоративная культура, а потому, что <span>по-настоящему рады вам.</span>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <div class="contacts__item-title">
+          Номер телефона:
+        </div>
+        <div class="contacts__item-phone">
+          <a href="tel:+79213212020" class="contacts__item-phone--item">+7 921 321-20-20</a>
+          <a href="tel:+79213212020" class="contacts__item-phone--item">+7 (812) 222-23-45</a>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <div class="contacts__item-title">
+          Email:
+        </div>
+        <div class="contacts__item-email">
+          hello@special-one.ru
+        </div>
+      </li>
+      <li class="contacts__item">
+        <div class="contacts__item-title">
+          Адрес:
+        </div>
+        <div class="contacts__item-address">
+          СПб, ул. Кременчугская 9/2
+        </div>
+      </li>
+      <li class="contacts__item">
+        <div class="contacts__item-button">
+          <button class="btn-reset consultation__btn">Записаться на консультацию</button>
+        </div>
+      </li>
+
+    </ul>
+    <div id="map-test" class="map"></div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <a href="#" class="footer__logo"><img loading="lazy" src="./img/logo.png" class="image" width="196" height="40" alt="Логотип Special One"></a>
+
+    <div class="footer__copy">© Special One 2021</br>Лицензия ЛО-78-01-011187</div>
+
+    <div class="footer__contacts">
+      <a href="tel:+79213212020" class="phone footer__phone">+7 921 321-20-20</a>
+      <a href="mailto:hello@special-one.ru" class="footer__email">hello@special-one.ru</a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
