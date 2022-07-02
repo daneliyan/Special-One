@@ -636,7 +636,7 @@ a {
   position: absolute;
   content: "";
   left: 50%;
-  right: 50%;
+  transform: translateX(-50%);
   bottom: -30px;
   width: 46px;
   height: 60px;
